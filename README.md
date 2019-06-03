@@ -85,6 +85,8 @@ if we use a high gamma correction, we can brighten images. However, this may cau
 
 - Output folder - Contains output videos
 
+- References folder - Contains supplementary documents that aid in understanding
+
 - Report folder - Contains [Project Report](https://github.com/adheeshc/Lucas-Kanade-Tracker/blob/master/Report/FINAL%20REPORT.pdf)
 
 ## **RUN INSTRUCTIONS**
