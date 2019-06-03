@@ -25,22 +25,23 @@ The algorithm computes the affine transformations from the template to every fra
 #### LK Algorithm
 
 <p align="center">
-  <img src="/Images/LK_algo.png" alt="LK Algo">
+  <img src="/Images/lk_algo.png" alt="LK Algo">
 </p>
 
+Refer to [Project Report](https://github.com/adheeshc/Lucas-Kanade-Tracker/blob/master/Report/FINAL%20REPORT.pdf) or [References](https://github.com/adheeshc/Lucas-Kanade-Tracker/tree/master/References) for further explanation
 
 ### Evaluation of the Tracker
 
 <p align="center">
-  <img src="/Images/1D_gaussian.png" alt="1D Gaussian">
+  <img src="/Images/car_tracker.gif" alt="car">
 </p>
 
 <p align="center">
-  <img src="/Images/1D_gaussian.png" alt="1D Gaussian">
+  <img src="/Images/human_tracker.gif" alt="human">
 </p>
 
 <p align="center">
-  <img src="/Images/1D_gaussian.png" alt="1D Gaussian">
+  <img src="/Images/vase_tracker.gif" alt="vase">
 </p>
 
 The tracker is then evaluated on the three sequences: the car sequence, the human walking, and the table top scene.
@@ -52,7 +53,7 @@ The LK tracker as it is formulated, breaks down when there is a change in illumi
 #### Adaptive Brightness Fix
 
 <p align="center">
-  <img src="/Images/1D_gaussian.png" alt="1D Gaussian">
+  <img src="/Images/car_adaptive.gif" alt="adaptive">
 </p>
 
 Here, I scale the brightness of pixels in each frame so that the average brightness of pixels in the tracked region stays the same as the average brightness of pixels in the template. Basically, I shift the pixel values to adapt to the brightness by changing them by a certain z-score relative to the mean of the template. 
@@ -60,7 +61,7 @@ Here, I scale the brightness of pixels in each frame so that the average brightn
 #### Gamma Correction Fix
 
 <p align="center">
-  <img src="/Images/1D_gaussian.png" alt="1D Gaussian">
+  <img src="/Images/car_gamma.gif" alt="gamma">
 </p>
 
 if we use a high gamma correction, we can brighten images. However, this may cause potential errors as it is not adaptive in nature making it less robust than the previous method. Hence, only if the norm value of the current frame was lesser than that of the template, a gamma correction was applied.
