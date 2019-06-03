@@ -14,19 +14,6 @@ Please refer to [Project Report](https://github.com/adheeshc/Lucas-Kanade-Tracke
   <img src="/Images/bounding_box.png" alt="Input">
 </p>
 
-
-<p align="center">
-  <img src="/Images/car_box.png" alt="Input">
-</p>
-
-<p align="center">
-  <img src="/Images/human_box.png" alt="Input">
-</p>
-
-<p align="center">
-  <img src="/Images/car_box.png" alt="Input">
-</p>
-
 Initialize manually the coordinates of a bounding box surrounding the object to be tracked.
 
 At the core of the algorithm, I get as input a grayscale image of the current frame (img), the template image (tmp), the bounding box (rect) that marks the template region in tmp, and the parameters (p_prev) of the previous warping.
@@ -38,7 +25,7 @@ The algorithm computes the affine transformations from the template to every fra
 #### LK Algorithm
 
 <p align="center">
-  <img src="/Images/avg_histo.png" alt="avg_histo">
+  <img src="/Images/LK_algo.png" alt="LK Algo">
 </p>
 
 
