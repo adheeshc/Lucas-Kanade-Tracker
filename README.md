@@ -33,7 +33,7 @@ Refer to [Project Report](https://github.com/adheeshc/Lucas-Kanade-Tracker/blob/
 ### Evaluation of the Tracker
 
 <p align="center">
-  <img src="/Images/car_tracker.gif" alt="car">
+  <img src="/Images/car_tracker_new.gif" alt="car">
 </p>
 
 <p align="center">
